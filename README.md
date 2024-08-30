@@ -10,51 +10,7 @@ Microservices
 
 project architecture:
 
-docker/
-│
-├── auth-service/
-│   ├── Dockerfile
-│   ├── app.js
-│   ├── package.json
-│   ├── routes/
-│   │   └── auth.js
-│   └── views/
-│       └── login.ejs
-│
-├── product-service/
-│   ├── Dockerfile
-│   ├── app.js
-│   ├── package.json
-│   ├── routes/
-│   │   └── product.js
-│   └── views/
-│       └── product.ejs
-│
-├── order-service/
-│   ├── Dockerfile
-│   ├── app.js
-│   ├── package.json
-│   ├── routes/
-│   │   └── order.js
-│   └── views/
-│       └── order.ejs
-│
-├── payment-service/
-│   ├── Dockerfile
-│   ├── app.js
-│   ├── package.json
-│   ├── routes/
-│   │   └── payment.js
-│   └── views/
-│       └── payment.ejs
-│
-├── docker-compose.yml
-└── kubernetes/
-    ├── auth-service-deployment.yaml
-    ├── product-service-deployment.yaml
-    ├── order-service-deployment.yaml
-    ├── payment-service-deployment.yaml
-    └── service.yaml
+![image](https://github.com/user-attachments/assets/8064147e-890b-42e8-8a7f-32aed8db8ba1)
 
 
 The project consists of the following microservices:
