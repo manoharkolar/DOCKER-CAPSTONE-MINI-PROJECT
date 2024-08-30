@@ -8,6 +8,55 @@ Project Overview
 This project demonstrates a microservices-based web application built using Docker and Kubernetes. The application is designed to showcase a modular architecture where each microservice is independently developed, deployed, and scaled. The microservices communicate with each other using REST APIs, and the entire application is containerized and orchestrated using Kubernetes.
 Microservices
 
+project architecture:
+
+docker/
+│
+├── auth-service/
+│   ├── Dockerfile
+│   ├── app.js
+│   ├── package.json
+│   ├── routes/
+│   │   └── auth.js
+│   └── views/
+│       └── login.ejs
+│
+├── product-service/
+│   ├── Dockerfile
+│   ├── app.js
+│   ├── package.json
+│   ├── routes/
+│   │   └── product.js
+│   └── views/
+│       └── product.ejs
+│
+├── order-service/
+│   ├── Dockerfile
+│   ├── app.js
+│   ├── package.json
+│   ├── routes/
+│   │   └── order.js
+│   └── views/
+│       └── order.ejs
+│
+├── payment-service/
+│   ├── Dockerfile
+│   ├── app.js
+│   ├── package.json
+│   ├── routes/
+│   │   └── payment.js
+│   └── views/
+│       └── payment.ejs
+│
+├── docker-compose.yml
+└── kubernetes/
+    ├── auth-service-deployment.yaml
+    ├── product-service-deployment.yaml
+    ├── order-service-deployment.yaml
+    ├── payment-service-deployment.yaml
+    └── service.yaml
+
+
 The project consists of the following microservices:
 
     Authentication Service
